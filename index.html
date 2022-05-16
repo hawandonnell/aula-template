@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>AULA</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__left">
+						<a href="#" class="logo-link">
+							<img src="./static/icons/Logo.svg" alt="aula logo" class="logo" />
+						</a>
+						<nav class="nav">
+							<a href="#" class="nav__item nav__item_active">Заявки</a
+							><a href="#" class="nav__item">Уведомления</a
+							><a href="#" class="nav__item">Аналитика</a
+							><a href="#" class="nav__item">Жители</a
+							><a href="#" class="nav__item">Сотрудники</a
+							><a href="#" class="nav__item">Дома</a
+							><a href="#" class="nav__item">УК</a>
+						</nav>
+					</div>
+					<button class="header__profile">
+						<img
+							src="./static/icons/user.svg"
+							alt="aula profile"
+							class="profile__picture"
+						/>
+						<img src="./static/icons/profile__arrow.svg" alt="profile arrow" />
+					</button>
+				</div>
+			</div>
+		</header>
+		<section class="manipulate">
+			<div class="container">
+				<div class="manipulate__inner">
+					<button class="create-request-btn" onclick="toggleRequestModal()">
+						Создать
+					</button>
+					<div class="filter-table">
+						<label for="from" class="filter__label">от</label>
+						<input type="date" id="from" class="filter__input" />
+						<label for="to" class="filter__label">до</label>
+						<input type="date" id="to" class="filter__input" />
+						<button>
+							<img src="./static/icons/search.svg" alt="table search" />
+						</button>
+					</div>
+					<button class="drop-filter">Сбросить фильтр</button>
+					<button class="export">Экспорт</button>
+				</div>
+			</div>
+		</section>
+		<main class="content-table">
+			<div class="container">
+				<div class="content-table__inner">
+					<table>
+						<thead>
+							<tr class="head__row-1">
+								<th>№ ID</th>
+								<th>Статус</th>
+								<th>Адрес</th>
+								<th>Помещение</th>
+								<th>№ помещ.</th>
+								<th>Тел. заявителя</th>
+								<th>Описание</th>
+								<th>Дата создания</th>
+								<th>Срок исполнения</th>
+								<th>Категория работ</th>
+								<th>Исполнитель</th>
+								<th>Стоимость</th>
+								<th>Оценка</th>
+							</tr>
+							<tr class="head__row-2">
+								<th><input type="number" /></th>
+								<th>
+									<select>
+										<option value="all">Все</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+								</th>
+								<th><input type="text" /></th>
+								<th><input type="search" /></th>
+								<th><input type="number" name="" id="" /></th>
+								<th><input type="tel" name="" id="" /></th>
+								<th><input type="text" name="" id="" /></th>
+								<th><input type="datetime" name="" id="" /></th>
+								<th><input type="time" name="" id="" /></th>
+								<th>
+									<select>
+										<option value="all" style="display: block">Все</option>
+										<option value="2" style="display: block">2</option>
+										<option value="3" style="display: block">3</option>
+									</select>
+								</th>
+								<th><input type="text" name="" id="" /></th>
+								<th>
+									<select>
+										<option value="all" style="display: block">Все</option>
+										<option value="2" style="display: block">2</option>
+										<option value="3" style="display: block">3</option>
+									</select>
+								</th>
+								<th><input type="number" name="" id="" /></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="table-item__unreaded">
+								<td>714</td>
+								<td>принята</td>
+								<td>Сарыарқа проспект, 16</td>
+								<td>---</td>
+								<td>12</td>
+								<td>+7 (444) 444 44 44</td>
+								<td>Текст описания</td>
+								<td>04.03.2021, 10:33:09</td>
+								<td>13:29:54</td>
+								<td>Лифтовое оборудование</td>
+								<td>Иванов Василий</td>
+								<td>бесплатно</td>
+								<td>0</td>
+							</tr>
+							<tr class="table-item__unreaded">
+								<td>714</td>
+								<td>принята</td>
+								<td>Сарыарқа проспект, 16</td>
+								<td>---</td>
+								<td>12</td>
+								<td>+7 (444) 444 44 44</td>
+								<td>Текст описания</td>
+								<td>04.03.2021, 10:33:09</td>
+								<td>13:29:54</td>
+								<td>Лифтовое оборудование</td>
+								<td>Иванов Василий</td>
+								<td>бесплатно</td>
+								<td>0</td>
+							</tr>
+							<tr class="table-item__unreaded">
+								<td>714</td>
+								<td>принята</td>
+								<td>Сарыарқа проспект, 16</td>
+								<td>---</td>
+								<td>12</td>
+								<td>+7 (444) 444 44 44</td>
+								<td>Текст описания</td>
+								<td>04.03.2021, 10:33:09</td>
+								<td>13:29:54</td>
+								<td>Лифтовое оборудование</td>
+								<td>Иванов Василий</td>
+								<td>бесплатно</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>714</td>
+								<td>принята</td>
+								<td>Сарыарқа проспект, 16</td>
+								<td>---</td>
+								<td>12</td>
+								<td>+7 (444) 444 44 44</td>
+								<td>Текст описания</td>
+								<td>04.03.2021, 10:33:09</td>
+								<td>13:29:54</td>
+								<td>Лифтовое оборудование</td>
+								<td>Иванов Василий</td>
+								<td>бесплатно</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>714</td>
+								<td>принята</td>
+								<td>Сарыарқа проспект, 16</td>
+								<td>---</td>
+								<td>12</td>
+								<td>+7 (444) 444 44 44</td>
+								<td>Текст описания</td>
+								<td>04.03.2021, 10:33:09</td>
+								<td>13:29:54</td>
+								<td>Лифтовое оборудование</td>
+								<td>Иванов Василий</td>
+								<td>бесплатно</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>714</td>
+								<td>принята</td>
+								<td>Сарыарқа проспект, 16</td>
+								<td>---</td>
+								<td>12</td>
+								<td>+7 (444) 444 44 44</td>
+								<td>Текст описания</td>
+								<td>04.03.2021, 10:33:09</td>
+								<td>13:29:54</td>
+								<td>Лифтовое оборудование</td>
+								<td>Иванов Василий</td>
+								<td>бесплатно</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>714</td>
+								<td>принята</td>
+								<td>Сарыарқа проспект, 16</td>
+								<td>---</td>
+								<td>12</td>
+								<td>+7 (444) 444 44 44</td>
+								<td>Текст описания</td>
+								<td>04.03.2021, 10:33:09</td>
+								<td>13:29:54</td>
+								<td>Лифтовое оборудование</td>
+								<td>Иванов Василий</td>
+								<td>бесплатно</td>
+								<td>0</td>
+							</tr>
+							<tr class="table-item__unreaded">
+								<td>714</td>
+								<td>принята</td>
+								<td>Сарыарқа проспект, 16</td>
+								<td>---</td>
+								<td>12</td>
+								<td>+7 (444) 444 44 44</td>
+								<td>Текст описания</td>
+								<td>04.03.2021, 10:33:09</td>
+								<td>13:29:54</td>
+								<td>Лифтовое оборудование</td>
+								<td>Иванов Василий</td>
+								<td>бесплатно</td>
+								<td>0</td>
+							</tr>
+							<tr class="table-item__unreaded">
+								<td>714</td>
+								<td>принята</td>
+								<td>Сарыарқа проспект, 16</td>
+								<td>---</td>
+								<td>12</td>
+								<td>+7 (444) 444 44 44</td>
+								<td>Текст описания</td>
+								<td>04.03.2021, 10:33:09</td>
+								<td>13:29:54</td>
+								<td>Лифтовое оборудование</td>
+								<td>Иванов Василий</td>
+								<td>бесплатно</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>714</td>
+								<td>принята</td>
+								<td>Сарыарқа проспект, 16</td>
+								<td>---</td>
+								<td>12</td>
+								<td>+7 (444) 444 44 44</td>
+								<td>Текст описания</td>
+								<td>04.03.2021, 10:33:09</td>
+								<td>13:29:54</td>
+								<td>Лифтовое оборудование</td>
+								<td>Иванов Василий</td>
+								<td>бесплатно</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>714</td>
+								<td>принята</td>
+								<td>Сарыарқа проспект, 16</td>
+								<td>---</td>
+								<td>12</td>
+								<td>+7 (444) 444 44 44</td>
+								<td>Текст описания</td>
+								<td>04.03.2021, 10:33:09</td>
+								<td>13:29:54</td>
+								<td>Лифтовое оборудование</td>
+								<td>Иванов Василий</td>
+								<td>бесплатно</td>
+								<td>0</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</main>
+		<section class="pagination">
+			<div class="container">
+				<div class="pagination__inner">
+					<button class="pagination__item">&#60;&#60;</button>
+					<button class="pagination__item">&#60;</button>
+					<button class="pagination__item pagination__current">1</button
+					><button class="pagination__item">2</button
+					><button class="pagination__item">3</button
+					><button class="pagination__item">4</button
+					><button class="pagination__item">5</button>
+					<button class="pagination__item">&#62;</button>
+					<button class="pagination__item">&#62;&#62;</button>
+				</div>
+			</div>
+		</section>
+		<section class="request-modal">
+			<div class="modal-overlay"></div>
+			<div class="modal__content">
+				<div class="modal__header">
+					<div class="modal__buttons">
+						<button class="modal__button request__current">
+							Заявка от жителя
+						</button>
+						<button class="modal__button">Внутренняя заявка</button>
+					</div>
+					<button class="close-modal__btn" onclick="toggleRequestModal()">
+						<img src="./static/icons/close.svg" alt="close request modal" />
+					</button>
+				</div>
+				<div class="modal__fields">
+					<div class="fields__wrapper">
+						<div class="fields__inner">
+							<div class="clientTel">
+								<label for="clientTel" class="modal__field"
+									>Телефон заявителя</label
+								>
+								<input
+									type="tel"
+									id="clientTel"
+									placeholder="+7 777 654 32 10"
+									class="input-styles"
+								/>
+							</div>
+							<div class="clientAdditTel">
+								<label for="clientAdditTel" class="modal__field"
+									>Дополнительный телефон</label
+								>
+								<input
+									type="tel"
+									id="clientAdditTel"
+									placeholder="+7"
+									class="input-styles"
+								/>
+							</div>
+							<div class="addr">
+								<label for="addr" class="modal__field">Адрес</label>
+								<select name="addr" id="addr" class="input-styles">
+									<option value="flat">Жанибек Керей хандар 16</option>
+								</select>
+							</div>
+							<div class="room-type">
+								<label for="roomType" class="modal__field">Тип помещения</label>
+								<select name="roomType" id="roomType" class="input-styles">
+									<option value="flat">Квартира</option>
+								</select>
+							</div>
+							<div class="roomNumber">
+								<label for="roomNumber" class="modal__field"
+									>Номер помещения</label
+								>
+								<input
+									type="number"
+									name="roomNumber"
+									id="roomNumber"
+									class="input-styles"
+								/>
+							</div>
+							<div class="work-categories">
+								<p class="work-field__label">Категории работ</p>
+								<div class="work-field__inner">
+									<div class="work-field__options">
+										<button class="work-field__option work__picked">
+											Сантехника
+										</button>
+										<button class="work-field__option">Электрика</button>
+										<button class="work-field__option">Уборка</button>
+										<button class="work-field__option">Благоустройство</button>
+										<button class="work-field__option">Отопление</button>
+										<button class="work-field__option">Домофон</button>
+									</div>
+									<button
+										class="work-field__toggler"
+										onclick="toggleWorkCategories()"
+									>
+										<svg
+											width="10"
+											height="6"
+											viewBox="0 0 10 6"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path d="M1 0.5L5 4.5L9 0.5" stroke="#363636" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="work-toggle__inner">
+							<button class="work-field__option work__picked">
+								Сантехника
+							</button>
+							<button class="work-field__option">Электрика</button>
+							<button class="work-field__option">Уборка</button>
+							<button class="work-field__option">Отопление</button>
+							<button class="work-field__option">Гарантийные работы</button>
+							<button class="work-field__option">Видеонаблюдение</button>
+							<button class="work-field__option">Ремонтные работы</button>
+							<button class="work-field__option">Вентиляция</button>
+							<button class="work-field__option">Плотнические работы</button>
+							<button class="work-field__option">Ремонтные работы</button>
+							<button class="work-field__option">
+								Дезинфекция и дератизация
+							</button>
+							<button class="work-field__option">Пожарная безопасность</button>
+							<button class="work-field__option">Благоустройство</button>
+							<button class="work-field__option">Домофон</button>
+							<button class="work-field__option">Лифтовое оборудование</button>
+							<button class="work-field__option">Охрана</button>
+							<button class="work-field__option">Прочее</button>
+						</div>
+						<textarea
+							rows="5"
+							class="input-styles work-categories__area"
+						></textarea>
+						<section class="addit-sett">
+							<header class="addit-sett__header">
+								<button class="header__item pick-executor">
+									Назначить исполнителя
+								</button>
+								<button
+									class="header__item choose-date"
+									onclick="toggleItem('choose-date__active', '.choose-date__collapsable')"
+								>
+									12 апреля 2021
+								</button>
+
+								<div class="header__item">
+									<input type="checkbox" name="isPaid" id="isPaid" />
+									<label for="isPaid" class="header__item is-paid__checkbox"
+										>Платная</label
+									>
+								</div>
+								<div class="choose-date__collapsable">
+									<div class="collaps__top">
+										<div class="choose-date__period">Срок исполнения</div>
+										<button
+											onclick="toggleItem('choose-date__active', '.choose-date__collapsable')"
+										>
+											<img
+												src="./static/icons/close.svg"
+												alt="close collapsable"
+											/>
+										</button>
+									</div>
+									<div class="collaps__items">
+										<div class="collaps__item">Сегодня</div>
+										<div class="collaps__item">Завтра</div>
+										<div class="collaps__item">6 апреля</div>
+										<div class="collaps__item">7 апреля</div>
+										<div class="collaps__item">8 апреля</div>
+									</div>
+									<div class="collaps__top collaps__bottom">
+										<i>
+											<svg
+												width="15"
+												height="16"
+												viewBox="0 0 15 16"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M14.4001 1.84997H11.2501V0.649969C11.2501 0.567469 11.1826 0.499969 11.1001 0.499969H10.0501C9.96758 0.499969 9.90008 0.567469 9.90008 0.649969V1.84997H5.10008V0.649969C5.10008 0.567469 5.03258 0.499969 4.95008 0.499969H3.90008C3.81758 0.499969 3.75008 0.567469 3.75008 0.649969V1.84997H0.600084C0.268209 1.84997 8.39233e-05 2.11809 8.39233e-05 2.44997V14.9C8.39233e-05 15.2318 0.268209 15.5 0.600084 15.5H14.4001C14.732 15.5 15.0001 15.2318 15.0001 14.9V2.44997C15.0001 2.11809 14.732 1.84997 14.4001 1.84997ZM13.6501 14.15H1.35008V7.02497H13.6501V14.15ZM1.35008 5.74997V3.19997H3.75008V4.09997C3.75008 4.18247 3.81758 4.24997 3.90008 4.24997H4.95008C5.03258 4.24997 5.10008 4.18247 5.10008 4.09997V3.19997H9.90008V4.09997C9.90008 4.18247 9.96758 4.24997 10.0501 4.24997H11.1001C11.1826 4.24997 11.2501 4.18247 11.2501 4.09997V3.19997H13.6501V5.74997H1.35008Z"
+													fill="#2EB85C"
+												/>
+											</svg>
+										</i>
+										<span>Выберите дату</span>
+									</div>
+								</div>
+							</header>
+							<div class="picked-executors">
+								<button class="picked-executor">Жунусов Нурлан</button>
+								<button class="picked-executor">Каримов Толеугали</button>
+								<button class="picked-executor">Сагандыков Жанабай</button>
+							</div>
+						</section>
+						<footer class="modal__footer">
+							<button class="pick-file">
+								<img src="./static/icons/clip.svg" alt="pick file" />
+								<span class="pick-file__label">Прикрепить</span>
+								<div class="picked-file__name">Падение сосулек.jpg</div>
+							</button>
+							<button class="save-request-btn" onclick="toggleRequestModal()">
+								Сохранить
+							</button>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>

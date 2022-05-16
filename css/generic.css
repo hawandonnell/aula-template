@@ -1,0 +1,27 @@
+/* Here written styles that shared between all template parts */
+
+:root {
+	--green: #2eb85c;
+	--black: #363636;
+	--white: #fefefe;
+}
+
+body {
+	background-color: #f5f5f5;
+	font-family: "Segoe UI";
+	color: var(--black);
+	overflow: hidden;
+}
+
+.container {
+	padding: 0 20px;
+}
+
+.input-styles {
+	border-radius: 4px;
+	border: 1px solid rgba(241, 241, 241, 1);
+	padding: 4px 8px;
+	font-size: 14px;
+	color: rgba(138, 147, 162, 1);
+	font-weight: 300;
+}

@@ -1,0 +1,31 @@
+.pagination__inner {
+	display: flex;
+	justify-content: center;
+}
+
+.pagination__inner {
+	background-color: #fefefe;
+	padding-top: 17px;
+	padding-bottom: 20px;
+	border-radius: 0 0 4px 4px;
+}
+
+.pagination__item {
+	padding: 6px 12px;
+	border: 1px solid #ebedef;
+	background-color: #fefefe;
+	font-weight: 300;
+}
+
+.pagination__item:first-child {
+	border-radius: 4px 0 0 4px;
+}
+
+.pagination__item:last-child {
+	border-radius: 0 4px 4px 0;
+}
+
+.pagination__current {
+	color: var(--white);
+	background-color: rgba(177, 183, 193, 1);
+}

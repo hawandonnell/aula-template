@@ -1,0 +1,35 @@
+.nav__item {
+	padding: 17px 24px;
+	color: var(--black);
+}
+
+.nav__item + .nav__item {
+	margin-left: 10px;
+}
+.nav__item_active {
+	box-shadow: inset 0px -4px 0px var(--green);
+	font-weight: 600;
+}
+
+.header__inner,
+.header__left,
+.header__profile {
+	display: flex;
+	align-items: center;
+}
+
+.header__inner {
+	justify-content: space-between;
+}
+
+.logo {
+	margin-right: 80px;
+}
+
+.header {
+	background-color: white;
+}
+
+.profile__picture {
+	margin-right: 32px;
+}

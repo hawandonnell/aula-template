@@ -1,0 +1,9 @@
+@import "./reset.css";
+@import "./static/fonts/SegoeUI/stylesheet.css";
+@import "./generic.css";
+
+@import "./template-parts/header.css";
+@import "./template-parts/manipulate.css";
+@import "./template-parts/content-table.css";
+@import "./template-parts/pagination.css";
+@import "./template-parts/request-modal.css";

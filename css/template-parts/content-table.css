@@ -1,0 +1,105 @@
+.content-table table {
+	text-align: start;
+	margin-top: 21px;
+	background-color: #fefefe;
+	border-radius: 4px;
+	padding: 20px;
+}
+
+.content-table__inner {
+	overflow-x: scroll;
+}
+
+.content-table__inner::-webkit-scrollbar {
+	background-color: rgba(235, 237, 239, 1);
+	height: 8px;
+}
+
+.content-table__inner::-webkit-scrollbar-button {
+	display: none;
+}
+
+.content-table__inner::-webkit-scrollbar-thumb {
+	background-color: rgba(177, 183, 193, 1);
+	border-radius: 2px;
+}
+
+th {
+	text-align: start;
+	border-bottom: 1px solid rgba(216, 219, 224, 1);
+}
+
+th + th {
+	padding-left: 10px;
+}
+
+tbody > tr + tr td {
+	border-top: 1px solid rgba(216, 219, 224, 1);
+}
+
+.head__row-1 th {
+	padding: 12px 24px 12px 12px;
+	font-size: 14px;
+	color: var(--black);
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.head__row-2 th {
+	padding: 5px;
+}
+
+td {
+	padding: 12px;
+	white-space: nowrap;
+	font-size: 14px;
+	font-weight: 350;
+	color: var(--black);
+}
+
+td:first-child {
+	padding-left: 34px;
+}
+
+th input {
+	width: 100%;
+	border-radius: 4px;
+	border: 1px solid rgba(241, 241, 241, 1);
+	padding: 4px 8px;
+	font-size: 14px;
+	color: rgba(138, 147, 162, 1);
+	font-weight: 300;
+}
+
+th select {
+	width: 100%;
+	font-size: 14px;
+	color: rgba(138, 147, 162, 1);
+	font-weight: 300;
+	border: 1px solid rgba(241, 241, 241, 1);
+}
+
+th select option {
+	font-size: 14px;
+	color: rgba(138, 147, 162, 1);
+	font-weight: 300;
+}
+
+.table-item__unreaded td {
+	font-weight: 600;
+}
+
+.table-item__unreaded td:first-child {
+	position: relative;
+}
+
+.table-item__unreaded td:first-child::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background-color: var(--green);
+	border-radius: 50%;
+	left: 12px;
+}

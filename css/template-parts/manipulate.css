@@ -1,0 +1,80 @@
+.manipulate {
+	margin-top: 23px;
+}
+
+.create-request-btn {
+	padding: 6px 29px 6px 53px;
+	background-color: var(--green);
+	border-radius: 4px;
+	position: relative;
+	font-size: 14px;
+	font-weight: 350;
+	color: var(--white);
+	text-transform: uppercase;
+}
+
+.create-request-btn::before {
+	content: url("https://api.iconify.design/akar-icons/plus.svg?color=%23fefefe&width=20");
+	position: absolute;
+	bottom: 2px;
+	left: 24px;
+}
+
+.manipulate__inner {
+	display: flex;
+	align-items: center;
+}
+
+.manipulate__inner > * + * {
+	margin-left: 44px;
+}
+
+.filter__label {
+	color: #4f5d73;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.filter-table > * + * {
+	margin-left: 1rem;
+}
+
+.filter-table {
+	display: flex;
+	align-items: center;
+}
+
+.filter__input {
+	border-radius: 4px;
+	border: 1px solid rgba(216, 219, 224, 1);
+	padding: 7px 16px;
+	color: rgba(79, 93, 115, 1);
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.drop-filter {
+	padding: 6px 12px;
+	border-radius: 4px;
+	border: 1px solid rgba(46, 184, 92, 1);
+	color: var(--green);
+	font-size: 14px;
+	font-weight: 350;
+}
+
+.export {
+	padding: 7px 26px 7px 64px;
+	border-radius: 4px;
+	background-color: var(--green);
+	color: var(--white);
+	font-size: 14px;
+	font-weight: 350;
+	position: relative;
+}
+
+.export::before {
+	content: url("https://api.iconify.design/file-icons/microsoft-excel.svg?color=%23fefefe&width=20");
+	position: absolute;
+	top: 7px;
+	left: 20px;
+}
